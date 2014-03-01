@@ -7,3 +7,4 @@
 /home/eduardo/Documentos/Projetos/buscaofe/platforms/android/bin/classes/com/buscaof/R$xml.class \
 /home/eduardo/Documentos/Projetos/buscaofe/platforms/android/bin/classes/com/buscaof/buscaof.class \
 /home/eduardo/Documentos/Projetos/buscaofe/platforms/android/bin/dexedLibs/classes-743838596075aef78ecd13dd20a18016.jar \
+/home/eduardo/Documentos/Projetos/buscaofe/platforms/android/bin/dexedLibs/annotations-bfc5e694429b7fc4f55f37e8b16f8dc3.jar \

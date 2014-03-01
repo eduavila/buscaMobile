@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Jquery Mobile 1.4  e Jquery 1.8 -->
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.0.min.css">
+        <script src="js/jquery.js" type="text/javascript"></script>
+        <script src="js/jquery.mobile-1.4.1.min.js" type="text/javascript"></script>
+        <script src="js/app.js" type="text/javascript"></script>
+
+    </head>
+    <body>
+        <div data-role="page" data-theme="a" id="page2" class="jqm jqm-home">
+
+            <!--Header -->
+            <div data-role="header" data-theme="a" class="jqm titulo">
+
+                <a href="#menu-left" class="navmenu ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">MenuEsquerdo</a>
+                <h2><img src="img/busca.png"></h2>
+                <a href="#menu-right" class="navmenu ui-btn ui-btn-icon-notext  ui-icon-search ui-nodisc-icon ui-alt-icon ui-btn-right">MenuDireito</a>
+        
+            </div><!-- fim header-->
+            
+            
+             <!--Iniciodo do menu(panel) lateral -->
+
+             <!-- Menu Lateral Esquerdo-->
+
+            <div id="menu-left" data-role="panel" data-position="left" data-display="overlay" class="menu menu-esquerdo ui-panel-inner">
+                <div class="ui-panel-inner">
+
+                    <ul data-role="listview" class="menu-list ui-alt-icon ui-nodisc-icon ui-listview" data-theme="a">
+                     
+                        <li data-icon="home"><a href="../">Novidades</a></li>
+                        <li><a href="pagina2.html" data-ajax="true">Melhores Ofertas</a></li>
+                        <li><a href="" data-ajax="true">Categorias</a></li>
+                        <li><a href="" data-ajax="true">Empresas</a></li>
+                        <li><a href="" data-ajax="true">Configurações</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+            
+            <!--Menu Lateral Direito -->
+            
+            <div id="menu-right" data-role="panel" data-position="right" data-display="overlay" class="menu menu-direito ui-panel-inner">
+                <div class="ui-panel-inner">
+
+                    <ul data-role="listview" class="menu-list ui-alt-icon ui-nodisc-icon ui-listview" data-theme="a">
+                     
+                        <li data-icon="home"><a href="../">Novidades</a></li>
+                        <li><a href="pagina2.html" data-ajax="true">Melhores Ofertas</a></li>
+                        <li><a href="" data-ajax="true">Categorias</a></li>
+                        <li><a href="" data-ajax="true">Empresas</a></li>
+                        <li><a href="" data-ajax="true">Configurações</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <!--Fim do menu(panel) lateral -->
+
+            
+          <!-- Contéudo Mensagens -->
+            <div role="main" class="ui-content">
+        
+               
+               
+                <ul id="lista" class="touch" data-role="listview" data-ajax="true" data-theme="a" data-icon="false" data-filter="true" data-filter-placeholder="Pesquisar Mensage...">
+                   
+                    <li>
+                        <a href="">
+                            <h3>SuperMercado1</h3>
+                            <img class="ofertas" src="img/promocao.png" alt="/img/"/>
+                            <p class="topic"><strong>Oferta Sexta Feira Frutas</strong></p>
+                            <p class="ui-li-aside"><strong>4:48</strong>PM</p>
+                        </a>
+                    </li>
+                   <li>
+                        <a href="">
+                            Supermercado1<h3>Descricao da Oferta</h3>
+                            <img class="img-ofertas" src="img/promocao.png" alt="/img/"/>
+                            <p class="oferta-descricao">Oferta de frutas com 50% desconto. </p>
+                            <p class="ui-li-aside"><strong>4:48</strong>PM</p>
+                        </a>
+                    </li>
+                   
+                     <li>
+                        <a href="">
+                            <h3>SuperMercado1</h3>
+                            <img class="ofertas" src="img/promocao.png" alt="/img/"/>
+                            <p class="topic"><strong>Oferta Sexta Feira Frutas</strong></p>
+                            <p class="ui-li-aside"><strong>4:48</strong>PM</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <h3>SuperMercado1</h3>
+                            <img class="ofertas" src="img/promocao.png" alt="/img/"/>
+                            <p class="topic"><strong>Oferta Sexta Feira Frutas</strong></p>
+                            <p class="ui-li-aside"><strong>4:48</strong>PM</p>
+                        </a>
+                    </li>
+
+                </ul> <!-- fim conteudo -->
+                
+                
+                
+                
+                
+                
+                <div id="confim" class="ui-content" data-role="popup" data-theme="a">
+                    <p id="questao">Tem certeza que você quer Arquivar?  </p>
+                    <div class="ui-grid-a">
+                          <div class="ui-block-a">
+                              <a id="yes" class="ui-btn ui-corner-all ui-btn-a" data-rel ="back"> Sim</a>
+                          </div>
+                          <div class="ui-block-b">
+                              <a id="cancel" class="ui-btn ui-corner-all ui-mini ui-btn-a" data-rel="back">Cancelar</a>
+                          </div>
+                    </div>
+                </div>     
+            </div>
+
+        </div>   
+    </body>
+</html>

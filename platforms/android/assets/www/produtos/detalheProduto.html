@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Jquery Mobile 1.4  e Jquery 1.8 -->
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.0.min.css">
+        <script src="js/jquery.js" type="text/javascript"></script>
+        <script src="js/jquery.mobile-1.4.1.min.js" type="text/javascript"></script>
+        <script src="js/app.js" type="text/javascript"></script>
+
+    </head>
+    <body>
+        <div data-role="page" data-theme="a" id="page2" class="jqm jqm-home">
+
+            <!--Header -->
+            <div data-role="header" data-theme="a" class="jqm titulo">
+
+                <a href="#menu-left" class="navmenu ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">MenuEsquerdo</a>
+                <h2><img src="img/busca.png"></h2>
+                <a href="#menu-right" class="navmenu ui-btn ui-btn-icon-notext  ui-icon-search ui-nodisc-icon ui-alt-icon ui-btn-right">MenuDireito</a>
+        
+            </div><!-- fim header-->
+            
+            
+             <!--Iniciodo do menu(panel) lateral -->
+
+             <!-- Menu Lateral Esquerdo-->
+
+            <div id="menu-left" data-role="panel" data-position="left" data-display="overlay" class="menu menu-esquerdo ui-panel-inner">
+                <div class="ui-panel-inner">
+
+                    <ul data-role="listview" class="menu-list ui-alt-icon ui-nodisc-icon ui-listview" data-theme="a">
+                     
+                        <li data-icon="home"><a href="../">Novidades</a></li>
+                        <li><a href="pagina2.html" data-ajax="true">Melhores Ofertas</a></li>
+                        <li><a href="" data-ajax="true">Categorias</a></li>
+                        <li><a href="" data-ajax="true">Empresas</a></li>
+                        <li><a href="" data-ajax="true">Configurações</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+            
+            <!--Menu Lateral Direito -->
+            
+            <div id="menu-right" data-role="panel" data-position="right" data-display="overlay" class="menu menu-direito ui-panel-inner">
+                <div class="ui-panel-inner">
+
+                    <ul data-role="listview" class="menu-list ui-alt-icon ui-nodisc-icon ui-listview" data-theme="a">
+                     
+                        <li data-icon="home"><a href="../">Novidades</a></li>
+                        <li><a href="pagina2.html" data-ajax="true">Melhores Ofertas</a></li>
+                        <li><a href="" data-ajax="true">Categorias</a></li>
+                        <li><a href="" data-ajax="true">Empresas</a></li>
+                        <li><a href="" data-ajax="true">Configurações</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <!--Fim do menu(panel) lateral -->
+
+            
+          <!-- Contéudo Mensagens -->
+            <div role="main" class="ui-content">
+                    <div class="detalhe-produ-oferta">
+                        <div class ="detalhe-empresa">
+                            <img src="" alt="imagem empresa" />
+                            <h4>Supermercado 2</h4>
+                        </div>
+
+                        <div class="detalhe-produto">
+                            <img src="" alt="imagem produto">
+                            <h3><strong>Produto 1</strong></div>
+                            <p class="desc-produ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        </div>
+                    
+
+
+                    </div>
+                    <div class="produto-recomendados">
+                        <ul data-role="listview" class="lista-recomendado listview">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    
+                    </div>
+            </div>
+
+        </div>   
+    </body>
+</html>

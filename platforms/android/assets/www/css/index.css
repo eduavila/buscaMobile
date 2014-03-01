@@ -1,115 +1,220 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
-* {
-    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+/* JQM Demos custom CSS */
+
+
+
+
+
+/* Header */
+
+.jqm .titulo h2 img {
+	display: block;
+	
+         witght:60px;
+        height:50px;
+}
+.jqm .titulo h2 > img {
+	display: inline-block;
+}
+.jqm .titulo .ui-btn {
+	width: 2em;
+	height: 2em;
+	background: #ffffff;
+	border: 0;
+	top: 50%;
+	margin-top: -1em;
+	-webkit-border-radius: .3125em;
+	border-radius: .3125em;
+	opacity: .4;
+	filter: Alpha(Opacity=40);
 }
 
-body {
-    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
-    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
-    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#E4E4E4;
-    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #A7A7A7),
-        color-stop(0.51, #E4E4E4)
-    );
-    background-attachment:fixed;
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size:12px;
-    height:100%;
-    margin:0px;
-    padding:0px;
-    text-transform:uppercase;
-    width:100%;
+
+/* rodape */
+
+.jqm .footer.ui-footer {
+	position: absolute;
+	bottom: 0;
+	padding-bottom: 0;
+}
+.jqm .rodape {
+	border-top: 1px solid #fff;
+}
+.jqm .rodape p {
+	font-size: .8em;
+	color: #999;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	margin: 0 1.25em 1.25em;
+}
+.jqm .rodape p:first-child {
+	font-size: 1em;
+	color: #666;
+	font-weight: 400;
+	margin: 1em 1em .75em;
 }
 
-/* Portrait layout (default) */
-.app {
-    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
-    position:absolute;             /* position in the center of the screen */
-    left:50%;
-    top:50%;
-    height:50px;                   /* text area height */
-    width:225px;                   /* text area width */
-    text-align:center;
-    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
-                                   /* offset horizontal: half of text area width */
+
+
+#menu-left{
+    padding:0;
+    position:absolute;
+    border-top: 0;
+    left:0;   
 }
 
-/* Landscape layout (with min-width) */
-@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
-    .app {
-        background-position:left center;
-        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
-        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
-                                      /* offset horizontal: half of image width and text area width */
-    }
+#menu-right{
+	padding: 0;
+	position: absolute;
+	border-top:0;
+	
 }
 
-h1 {
-    font-size:24px;
-    font-weight:normal;
-    margin:0px;
-    overflow:visible;
-    padding:0px;
-    text-align:center;
+
+.menu-list{
+    border:auto;
+    padding:0 0 0 0;
+    list-style:none;
+    text-decoration: none;
+    
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 300;
+    text-shadow:none !important;
+    border-top:none;
+}
+.menu-list li{
+    display: none;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.menu-list ul{
+    padding: 0;
+    border:0;
 }
 
-.event {
-    border-radius:4px;
-    -webkit-border-radius:4px;
-    color:#FFFFFF;
-    font-size:12px;
-    margin:0px 30px;
-    padding:2px 0px;
+
+
+/*Lista de Grupo de Ofertas */
+
+#lista li a{
+	margin-left: 0;
+ 	padding: 0;
 }
 
-.event.listening {
-    background-color:#333333;
-    display:block;
+.oferta-descricao{
+	padding-top: 2px;
+	background-color: 
 }
 
-.event.received {
-    background-color:#4B946A;
-    display:none;
+#lista li a img{
+	margin-left:0;
+	margin-bottom: 0;
+	width: 90%;
+	height:auto;
+	padding: 0;
 }
 
-@keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.4; }
-    to { opacity: 1.0; }
+
+.img-ofertas{
+
+	margin-left:0;
+	margin-bottom: 0;
+
+	padding: 0;
 }
- 
-@-webkit-keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.4; }
-    to { opacity: 1.0; }
+       
+
+
+
+
+
+
+li.left {
+			-webkit-transition: -webkit-transform 250ms ease;
+			-webkit-transform: translateX(-100%);
+			-moz-transition: -moz-transform 250ms ease;
+			-moz-transform: translateX(-100%);
+			-o-transition: -o-transform 250ms ease;
+			-o-transform: translateX(-100%);
+			transition: transform 250ms ease;
+			transform: translateX(-100%);
+		}
+		/* Right transition */
+		li.right {
+			-webkit-transition: -webkit-transform 250ms ease;
+			-webkit-transform: translateX(100%);
+			-moz-transition: -moz-transform 250ms ease;
+			-moz-transform: translateX(100%);
+			-o-transition: -o-transform 250ms ease;
+			-o-transform: translateX(100%);
+			transition: transform 250ms ease;
+			transform: translateX(100%);
+		}
+
+
+
+
+
+
+
+/* Detalhe da Produto */
+
+.detalhe-empresa .detalhe-produ-oferta{
+	padding: 0;
+	margin-top:0;
+	margin-left: 0;
 }
- 
-.blink {
-    animation:fade 3000ms infinite;
-    -webkit-animation:fade 3000ms infinite;
+
+.detalhe-empresa img{
+	display: block;
+	float:left;
+	position: relative;
+	width:50px;
+	height: 50px;
+	float:left;
+	border-bottom: 10px;
+	padding-left:10px;
+	padding-bottom: 10px 
+}
+
+.clear{
+	clear:both;
+}
+
+.detalhe-empresa{
+
+	
+	font-size :0.9em;
+	font-family: 'Open Sans', sans-serif;
+	width:80%;
+
+}
+
+
+
+.detalhe-produto{
+
+	background-color:#ededed;
+	width:100%;
+	padding: 5px 5px 2px  0;
+}
+
+.detalhe-produto img{
+	position: relative;
+	float:left;
+	padding-left: 9px;
+	padding-top: 9px;
+	padding-right: 15px;
+}
+
+.detalhe-produto .preco{
+	position:relative;
+	right:-2px;
+	top:10px;
+
+}
+
+.detalhe-produto h3{
+	border-top: 0;
+	
 }
