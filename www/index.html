@@ -1,21 +1,6 @@
 <!DOCTYPE html>
 <!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
+   
 -->
 <html>
     <head>
@@ -67,9 +52,9 @@
 
                     <ul data-role="listview" class="menu-list ui-alt-icon ui-nodisc-icon ui-listview" data-theme="a">
                      
-                        <li data-icon="home"><a href="../">Novidades</a></li>
+                        <li data-icon="home"><a href="index.html">Novidades</a></li>
                         <li><a href="pagina2.html" data-ajax="false">Melhores Ofertas</a></li>
-                        <li><a href="" data-ajax="true">Categorias</a></li>
+                        <li><a href="categorias.html" data-transition="slide"  data-ajax="false">Categorias</a></li>
                         <li><a href="" data-ajax="true">Empresas</a></li>
                         <li><a href="" data-ajax="true">Configurações</a></li>
 
@@ -102,14 +87,18 @@
 
             <div role="main" data-theme="a" class="ui-content">
 
-                <a href="#page2" data-role="button" data-icon="info">Button</a>
+                <a href="detalhe-empresa.html" data-ajax="true" data-transition="slide" data-role="button" data-icon="info">Button</a>
                 <a href="detalheProduto.html" data-ajax="false"  data-role="button" data-icon="info">Button</a>
 
             </div>
+
+          <!--  
             <div data-role="footer"  data-theme="a" data-position="fixed" data-tap-toggle="false" class="rodape">
                 <p>IntraMob Version <span class="version">1.0</span></p>
                 <p>Copyright 2014</p>
             </div>
+
+            -->
         </div>
        
     </body>

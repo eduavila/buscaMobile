@@ -165,6 +165,14 @@ li.left {
 	margin-left: 0;
 }
 
+.nome-empresa{
+	text-decoration: none;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 300;
+
+    padding-top: 10px;
+}
+
 .detalhe-empresa img{
 	display: block;
 	float:left;
@@ -173,8 +181,7 @@ li.left {
 	height: 50px;
 	float:left;
 	border-bottom: 10px;
-	padding-left:10px;
-	padding-bottom: 10px 
+	padding:10px 10px 10px 10px;
 }
 
 .clear{
@@ -189,9 +196,6 @@ li.left {
 	width:80%;
 
 }
-
-
-
 .detalhe-produto{
 
 	background-color:#ededed;
@@ -218,3 +222,38 @@ li.left {
 	border-top: 0;
 	
 }
+
+.lista-recomendado li a img{
+
+	padding: 10px 0 0 10px;
+}
+
+.empresa{
+	
+	padding:10px 10px 10px 10px;
+}
+.empresa h3{
+	font-family: 'Open Sans', sans-serif;
+	font-size:30px;
+	padding-top:0px;
+}
+.empresa hr{
+	background-color: #EBEBEB;
+}
+
+.empresa-logo{
+	width: 95%;
+	height: 150px;	
+	padding:10px 10px 10px 10px;
+	float:left;	
+}
+
+
+
+/*icone facebook e twitter */
+
+.ui-icon-face{
+	background-image: url("img/thumbs-o-up.svg");
+}
+
+

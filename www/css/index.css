@@ -196,9 +196,6 @@ li.left {
 	width:80%;
 
 }
-
-
-
 .detalhe-produto{
 
 	background-color:#ededed;
@@ -231,10 +228,32 @@ li.left {
 	padding: 10px 0 0 10px;
 }
 
-
-.detalhe-empresa img{
-	width:90%;
-	height: auto;
-	padding: 0 0 0 0;
-	border:  0 0 0 0;
+.empresa{
+	
+	padding:10px 10px 10px 10px;
 }
+.empresa h3{
+	font-family: 'Open Sans', sans-serif;
+	font-size:30px;
+	padding-top:0px;
+}
+.empresa hr{
+	background-color: #EBEBEB;
+}
+
+.empresa-logo{
+	width: 95%;
+	height: 150px;	
+	padding:10px 10px 10px 10px;
+	float:left;	
+}
+
+
+
+/*icone facebook e twitter */
+
+.ui-icon-face{
+	background-image: url("img/thumbs-o-up.svg");
+}
+
+
