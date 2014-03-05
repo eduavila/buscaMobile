@@ -251,6 +251,13 @@ li.left {
 	float:left;	
 }
 
+/*Map Empresa */
+
+#map-canvas{
+	width: auto;
+	height: 200px;
+	padding:0;
+}
 
 
 /*icone facebook e twitter */
@@ -269,3 +276,7 @@ li.left {
 	font-size: 0.9em;
 	text-align: center;
 }
+
+
+
+
