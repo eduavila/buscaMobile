@@ -22,7 +22,7 @@ $(document).on( "pagecreate", function() {
             })
             .then( function ( response ) {
                 $.each( response, function ( i, val ) {
-                    html += "<li><a href=''>"  + val + "</a></li>";
+                    html += "<li><a href='img/picture-o.png'>"  + val + "</a></li>";
                 });
                 $ul.html( html );
                 $ul.listview( "refresh" );
