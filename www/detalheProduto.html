@@ -20,14 +20,14 @@ and open the template in the editor.
 
     </head>
     <body>
-        <div data-role="page" data-theme="a" id="detalhe-Produto" class="jqm jqm-home">
+        <div data-role="page" data-theme="a" class="jqm jqm-home">
 
             <!--Header -->
             <div data-role="header" data-theme="a" class="jqm titulo">
 
-                <a href="#menu-left" class="navmenu ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">MenuEsquerdo</a>
+                <a href="#menu-left" data-rel="panel" class="navmenu ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">MenuEsquerdo</a>
                 <h2><img src="img/busca.png"></h2>
-                <a href="#menu-right" class="navmenu ui-btn ui-btn-icon-notext  ui-icon-search ui-nodisc-icon ui-alt-icon ui-btn-right">MenuDireito</a>
+                <a href="#menu-right" data-rel="panel" class="navmenu ui-btn ui-btn-icon-notext  ui-icon-search ui-nodisc-icon ui-alt-icon ui-btn-right">MenuDireito</a>
         
             </div><!-- fim header-->
             
@@ -41,7 +41,7 @@ and open the template in the editor.
 
                     <ul data-role="listview" class="menu-list ui-alt-icon ui-nodisc-icon ui-listview" data-theme="a">
                      
-                        <li data-icon="home"><a href="../">Novidades</a></li>
+                        <li data-icon="home"><a href="/" data-ajax="false"> Novidades</a></li>
                         <li><a href="pagina2.html" data-ajax="true">Melhores Ofertas</a></li>
                         <li><a href="" data-ajax="true">Categorias</a></li>
                         <li><a href="" data-ajax="true">Empresas</a></li>
@@ -51,26 +51,22 @@ and open the template in the editor.
                 </div>
 
             </div>
-            
+           
             <!--Menu Lateral Direito -->
             
             <div id="menu-right" data-role="panel" data-position="right" data-display="overlay" class="menu menu-direito ui-panel-inner">
                 <div class="ui-panel-inner">
 
-                    <ul data-role="listview" class="menu-list ui-alt-icon ui-nodisc-icon ui-listview" data-theme="a">
-                     
-                        <li data-icon="home"><a href="../">Novidades</a></li>
-                        <li><a href="pagina2.html" data-ajax="true">Melhores Ofertas</a></li>
-                        <li><a href="" data-ajax="true">Categorias</a></li>
-                        <li><a href="" data-ajax="true">Empresas</a></li>
-                        <li><a href="" data-ajax="true">Configurações</a></li>
+                    <ul id="autocomplete" data-role="listview" data-inset="false" data-filter="true" data-filter-placeholder="Pesquisar" data-filter-theme="a" class="listview ui-alt-icon ui-nodisc-icon"></ul>
 
                     </ul>
                 </div>
 
             </div>
-            <!--Fim do menu(panel) lateral -->
 
+            
+            <!--Fim do menu(panel) lateral -->
+            
             
           <!-- Contéudo Mensagens -->
             <div role="main" class="ui-content">

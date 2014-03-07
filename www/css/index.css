@@ -63,12 +63,19 @@
     left:0;   
 }
 
+
+/* Menu Direito*/
 #menu-right{
 	padding: 0;
 	position: absolute;
 	border-top:0;
 	
 }
+
+.ui-filter-inset {
+    margin-top: 0;
+}
+/*fim menu direita */
 
 
 .menu-list{
@@ -276,6 +283,8 @@ li.left {
 	font-size: 0.9em;
 	text-align: center;
 }
+
+
 
 
 
