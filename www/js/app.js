@@ -2,6 +2,19 @@ var empresa;
 var produto;
 
 $(document).on( "pagecreate", function() {
+
+    $(document).on( "swipeleft swiperight",function( e ) {
+        if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
+            if ( e.type === "swipeleft" ) {
+                $( "#menu-right" ).panel( "open" );
+            } else if ( e.type === "swiperight" ) {
+                $( "#menu-left" ).panel( "open" );
+            }
+        }
+    });
+
+
+
     
     $( "#autocomplete" ).on( "filterablebeforefilter", function ( e, data ) {
         var $ul = $( this ),
@@ -34,15 +47,15 @@ $(document).on( "pagecreate", function() {
 
 
 
-$(document).on( "pagecreate", ":jqmData(role='page')", function() {
-    $(document).on( "swipeleft swiperight", ":jqmData(role='page')", function( e ) {
+// $(document).on( "pagecreate", ":jqmData(role='page')", function() {
+//     $(document).on( "swipeleft swiperight", ":jqmData(role='page')", function( e ) {
 
-        if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
-            if ( e.type === "swipeleft" ) {
-                $( "#menu-right" ).panel( "open" );
-            } else if ( e.type === "swiperight" ) {
-                $( "#menu-left" ).panel( "open" );
-            }
-        }
-    });
-});
+//         if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
+//             if ( e.type === "swipeleft" ) {
+//                 $( "#menu-right" ).panel( "open" );
+//             } else if ( e.type === "swiperight" ) {
+//                 $( "#menu-left" ).panel( "open" );
+//             }
+//         }
+//     });
+// });

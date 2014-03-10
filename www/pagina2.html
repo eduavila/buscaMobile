@@ -1,12 +1,7 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Busca-Melhores Ofertas</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" type="text/css" href="css/index.css" />
@@ -27,27 +22,36 @@ and open the template in the editor.
                 <a href="#menu" class="navmenu ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
                 <h2><img src="img/busca.png"></h2>
             </div><!-- fim header-->
-            <!--inicio menu -->
-             <div id="menu" data-role="panel" data-position="left" data-display="overlay" class="menu-lateral ui-panel-inner">
+          
+              <!--Iniciodo do menu(panel) lateral -->
+
+            <div id="menu-left" data-role="panel" data-position="left" data-display="overlay" class="menu menu-esquerdo ui-panel-inner">
                 <div class="ui-panel-inner">
 
                     <ul data-role="listview" class="menu-list ui-alt-icon ui-nodisc-icon ui-listview" data-theme="a">
-                        <li>
-                            <ul data-role="listview" data-filter="true" data-filder-reveal="true" data-filter-placeholder="Pesquisar.." >
+                     
+                        <li data-icon="home"><a href="index.html">Novidades</a></li>
+                        <li><a href="pagina2.html" data-ajax="false">Melhores Ofertas</a></li>
+                        <li><a href="categorias.html" data-transition="slide"  data-ajax="false">Categorias</a></li>
+                        <li><a href="" data-ajax="true">Empresas</a></li>
+                        <li><a href="" data-ajax="true">Configurações</a></li>
 
-                            </ul>
-                        </li>
-                        <li data-filtertext="Novas,Messagens, Msg, news" data-icon="mail"><a href="index.html">Caixa Entrada</a></li>
-                        <li data-filtertext="Messagens"><a href="pagina2.html" data-ajax="true">Minhas Messagens</a></li>
-                        <li data-filtertext="user,usuarios"><a href="#" data-ajax="true">Usuários</a></li>
-                        <li data-filtertext=""><a href="../button/" data-ajax="true">Arquivos</a></li>
-                        <li data-filtertext=""><a href="../button/" data-ajax="true">Configurações</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+            
+            <div id="menu-right" data-role="panel" data-position="right" data-display="overlay" class="menu menu-direito ui-panel-inner">
+                <div class="ui-panel-inner">
+
+                    <ul id="autocomplete" data-role="listview" data-inset="false" data-filter="true" data-filter-placeholder="Pesquisar" data-filter-theme="a" class="listview ui-alt-icon ui-nodisc-icon"></ul>
 
                     </ul>
                 </div>
 
             </div>
-                  <!--fim menu -->
+        <!--Fim do menu(panel) lateral -->
 
             
           <!-- Contéudo Mensagens -->
@@ -55,7 +59,7 @@ and open the template in the editor.
         
                
                
-                <ul id="list" class="touch" data-role="listview" data-ajax="true" data-theme="a" data-dividertheme="a" data-icon="false" data-filter="true" data-filter-placeholder="Pesquisar Mensage...">
+                <ul id="list" class="touch" data-role="listview" data-ajax="true" data-theme="a" data-dividertheme="a" data-icon="false">
                    
                     <li>
                         <a href="#demo-mail">
